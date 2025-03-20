@@ -25,10 +25,8 @@ namespace LevelTwo
 
         static void mostrarImagem(string imagem, int largura)
         {
-            var image = new Spectre.Console.Image(imagem);
-
-            image = image.WithWidht(largura);
-            AnsiConsole.Write(image);
+            
+            AnsiConsole.Image(image).Width(largura);
         }
     }
 }
