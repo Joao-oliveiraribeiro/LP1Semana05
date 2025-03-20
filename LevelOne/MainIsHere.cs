@@ -12,5 +12,10 @@ namespace LevelOne
         {
             Console.WriteLine("Hello LP1!");
         }
+
+        private static void NewMethod()
+        {
+            Console.WriteLine("Bye LP1!");
+        }
     }
 }
