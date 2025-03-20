@@ -12,7 +12,9 @@ namespace LevelOne
         {
             Console.WriteLine("Hello LP1!");
         }
-
+        /// <summary>
+        /// This method says Bye LP1
+        /// </summary>
         private static void NewMethod()
         {
             Console.WriteLine("Bye LP1!");
