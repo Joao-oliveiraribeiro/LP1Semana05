@@ -1,10 +1,11 @@
 ﻿using System;
+using Spectre.Console;
 
 namespace LevelTwo
 {
     public class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
             string nomeImagem = "tux.jpg";
             int largura = 24;
@@ -18,6 +19,16 @@ namespace LevelTwo
             {
                 largura = int.Parse(args[1]);
             }
+
+            mostrarImagem(nomeImagem, largura);
+        }
+
+        static void mostrarImagem(string imagem, int largura)
+        {
+            var image = new Spectre.Console.Image(imagem);
+
+            image = image.WithWidht(largura);
+            AnsiConsole.Write(image);
         }
     }
 }
