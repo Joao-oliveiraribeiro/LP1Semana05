@@ -1,7 +1,10 @@
-﻿using System;
+using System;
 
 namespace LevelOne
 {
+    /// <summary>
+    /// Program starts here and runs
+    /// </summary>
     public class Program
     {
         /// <summary>
@@ -18,6 +21,12 @@ namespace LevelOne
         private static void NewMethod()
         {
             Console.WriteLine("Bye LP1!");
+        /// </summary>
+        public static void NewFeature()
+        {
+            Console.WriteLine("New Feature!");
         }
     }
+
+
 }
